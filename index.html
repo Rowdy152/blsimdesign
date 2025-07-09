@@ -13,29 +13,48 @@
     <p>Custom Paints for iRacing</p>
   </header>
 
-  <section class="gallery">
-    <h2>Portfolio</h2>
-    <div class="images">
-      <img src="images/livery1.png" alt="Livery 1">
-      <img src="images/livery2.jpg" alt="Livery 2">
-      <!-- Add more as needed -->
-    </div>
-  </section>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('portfolio')">Portfolio</button>
+    <button class="tab-btn" onclick="showTab('about')">About</button>
+    <button class="tab-btn" onclick="showTab('contact')">Contact</button>
+  </div>
 
-  <section class="about">
-    <h2>About</h2>
-    <p>I'm Brad, and I run BL Sim Design — a custom iRacing paint shop. I create professional, clean, and eye-catching liveries for racers who want to stand out on the track.</p>
-  </section>
+  <div id="portfolio" class="tab-content active">
+    <section class="gallery">
+      <h2>Portfolio</h2>
+      <div class="images">
+        <img src="images/livery1.png" alt="Livery 1">
+        <img src="images/livery2.png" alt="Livery 2">
+      </div>
+    </section>
+  </div>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email me at <a href="mailto:blsimdesign@outlook.com">blsimdesign@outlook.com</a></p>
-    <p>Or join the discord here: <a href="https://discord.gg/YHqBdKuDyF" target="_blank" rel="noopener noreferrer">BL Sim Design</a>
+  <div id="about" class="tab-content">
+    <section class="about">
+      <h2>About</h2>
+      <p>I'm Brad, and I run BL Sim Design — a custom iRacing paint shop. I create professional, clean, and eye-catching liveries for racers who want to stand out on the track.</p>
+    </section>
+  </div>
 
-  </section>
+  <div id="contact" class="tab-content">
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>Or message me on Discord: <strong>blsimdesign#1234</strong></p>
+    </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 BL Sim Design</p>
   </footer>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
