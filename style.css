@@ -29,9 +29,14 @@ body {
   justify-content: center;
 }
 .hero-logo {
-  max-width: 100%;
   width: 300px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto 1rem;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeScaleIn 1s ease-out forwards;
+  animation-delay: 0.5s;
 }
 .hero h1 {
   font-size: 2.8rem;
