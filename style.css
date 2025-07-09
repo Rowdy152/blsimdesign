@@ -29,7 +29,8 @@ body {
   justify-content: center;
 }
 .hero-logo {
-  width: 360px;
+  max-width: 100%;
+  width: 300px;
   margin: 0 auto 1rem;
 }
 .hero h1 {
