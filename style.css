@@ -114,6 +114,7 @@ footer {
   max-height: 75%;
   border: 4px solid #fff;
   border-radius: 10px;
+  margin: auto;
 }
 .lightbox:target {
   display: flex;
