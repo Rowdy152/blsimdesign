@@ -118,8 +118,8 @@ footer {
 }
 .close-button {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 0px;
+  right: 0px;
   color: white;
   font-size: 3rem;
   text-decoration: none;
