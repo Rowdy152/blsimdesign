@@ -107,6 +107,7 @@ footer {
   background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 .lightbox img {
   max-width: 75%;
