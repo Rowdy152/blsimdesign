@@ -14,6 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin:auto
 }
 .hero.small {
   height: 40vh;
