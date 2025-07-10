@@ -9,9 +9,9 @@
 <body>
   <header class="hero">
     <div class="overlay">
-<a href="index.html">
-  <img src="images/logo.png" alt="BL Sim Design Logo" class="hero-logo" />
-</a>
+      <a href="index.html">
+        <img src="images/logo.png" alt="BL Sim Design Logo" class="hero-logo" />
+      </a>
       <h1>BL Sim Design</h1>
       <p>Custom iRacing Paints by Brad Lawson</p>
       <nav class="main-nav">
@@ -23,24 +23,32 @@
   </header>
 
   <main>
-    <<section class="gallery">
-  <h2>Featured Liveries</h2>
-  <div class="images">
-    <a href="#livery1"><img src="images/livery1.png" alt="Livery 1"></a>
-    <a href="#livery2"><img src="images/Jason Day - Next Gen.png" alt="Livery 2"></a>
-  </div>
+    <section class="gallery">
+      <h2>Featured Liveries</h2>
+      <div class="images">
+        <a href="#img1" class="lightbox-thumb">
+          <img src="images/livery1.png" alt="Livery 1">
+        </a>
+        <div id="img1" class="lightbox">
+          <a href="#" class="lightbox-close-area"></a>
+          <div class="lightbox-content">
+            <img src="images/livery1.png" alt="Livery 1 Large">
+            <a href="#" class="close-button">&times;</a>
+          </div>
+        </div>
 
-  <div id="livery1" class="lightbox">
-    <a href="#" class="close">×</a>
-    <img src="images/livery1.png" alt="Livery 1 Enlarged">
-  </div>
-
-  <div id="livery2" class="lightbox">
-    <a href="#" class="close">×</a>
-    <img src="images/Jason Day - Next Gen.png" alt="Livery 2 Enlarged">
-  </div>
-</section>
-
+        <a href="#img2" class="lightbox-thumb">
+          <img src="images/livery2.png" alt="Livery 2">
+        </a>
+        <div id="img2" class="lightbox">
+          <a href="#" class="lightbox-close-area"></a>
+          <div class="lightbox-content">
+            <img src="images/livery2.png" alt="Livery 2 Large">
+            <a href="#" class="close-button">&times;</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -48,4 +56,3 @@
   </footer>
 </body>
 </html>
-
